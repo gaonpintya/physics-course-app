@@ -2,13 +2,15 @@ import streamlit as st
 
 # Simple login system
 def login():
-    # Custom title and logo
-    st.title("Guide to IIT 🔒")
+    # Logo at the top
     st.markdown("""
     <div style="text-align: center;">
         <img src="https://i.imgur.com/BeJsyd2.png" alt="Guide to IIT Logo" style="width: 150px; border-radius: 10px;">
     </div>
     """, unsafe_allow_html=True)
+    
+    # Title below the logo
+    st.title("Guide to IIT 🔒")
     
     # Login form
     username = st.text_input("Username")
